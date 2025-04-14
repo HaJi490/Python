@@ -1,5 +1,5 @@
 ✅ 머신러닝/딥러닝을 위한 실전형 함수 작성 훈련 과제
-핵심 요소: list comprehension, slice, tuple, dictionary, enumerate(), zip() 집중 사용
+핵심 요소: list comprehension, tuple, dictionary, enumerate(), zip() 집중 사용
 
 🧩 STEP 1. 리스트 처리 함수 (기초 + comprehension)
 📌 과제 1
@@ -81,7 +81,7 @@ def score_summary(data):
 아래의 리스트를 기반으로 다음 작업을 각각의 함수로 분리하여 구현해보세요.
 
 names = ["홍길동", " 김유신 ", "이순신", "강 감 찬"]
-scores = [85, 70, 60, 90] #과목별 점수 추가해보기, 각과목별 최고점수 구하기
+scores = [85, 70, 60, 90]
 subjects = ["수학", "영어", "과학", "국어"]
 
 함수 분리 목표
@@ -169,7 +169,7 @@ labels = [1, 1, 1, 0, 1, 0, 1, 0, 1, 0]
 
 ✅ 실습 1: train_test_split(data, ratio=0.8) 직접 구현
 📌 문제 설명
-data 리스트를 무작위로 섞은 뒤, ratio에 따라 train/test로 분할하는 함수를 작성하세요. #난수생성, slice
+data 리스트를 무작위로 섞은 뒤, ratio에 따라 train/test로 분할하는 함수를 작성하세요.
 
 🎯 출력 예시
 
@@ -189,7 +189,7 @@ int(len(data) * ratio)로 슬라이싱
 예시:
 
 y_true = [1, 0, 1, 1, 0]
-y_pred = [1, 0, 0, 1, 1] #5개중에 1틀렸으니까 80%
+y_pred = [1, 0, 0, 1, 1]
 
 print(accuracy(y_true, y_pred))  # 출력: 60.0
 
@@ -208,10 +208,6 @@ labels = [0, 1, 2, 0, 1]
 print(one_hot_encode(labels))
 
 # 출력: [[1,0,0], [0,1,0], [0,0,1], [1,0,0], [0,1,0]]
-
-labels2 = [0, 5, 4, 3, 2, 0]
-
-#출력:[[1,0,0,0,0,0], [0,0,0,0,0,1], [0,0,0,0,1,0]...] #데이터 전처리 변환 -> 성능이 더 좋아짐
 
 💡 힌트
 max(labels) → 클래스 개수 확인
